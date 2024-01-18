@@ -1,0 +1,1529 @@
+<html><head><style type="text/css">.turbo-progress-bar {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: #0076ff;
+    z-index: 2147483647;
+    transition:
+      width 300ms ease-out,
+      opacity 150ms 150ms ease-in;
+    transform: translate3d(0, 0, 0);
+  }
+  </style>
+        <title>
+        All Projects
+      - OSSRank
+    </title>
+    <!-- This is not async because we want to load this before doing anything else -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js" nonce=""></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-QJZ625CC1X&amp;l=dataLayer&amp;cx=c" nonce=""></script><script type="application/javascript" src="https://unpkg.com/@june-so/analytics-next/dist/umd/standalone.js"></script><script src="/assets/banner-10fa2e5e6a7ec4a3ef563b36f66dfd14367d31737fc0e543864aeaf27fc85749.js" async="async"></script>
+  
+      <script>
+  
+        const resetSearchForm = () => {
+        const searchInput = document.getElementById("search-box");
+        searchInput.value = "";
+        }
+  
+        document.addEventListener("keydown", () => {
+  
+          if (event.key === "k" && event.metaKey) {
+              const searchInput = document.getElementById("search-box");
+              const overlay = document.getElementById("quick-search-overlay");
+              overlay.style.display = "block";
+  
+              // move this to quick search file.
+              searchInput.focus();
+              resetSearchForm();
+          }
+  
+          if (event.key === "Escape") {
+              const overlay = document.getElementById("quick-search-overlay");
+              overlay.style.display = "none";
+              resetSearchForm();
+          }
+        });
+  
+        // add an event listener to this document and hide quick search overlay when clicked outside
+        window.onclick = function (event) {
+          var myBox = document.getElementById('quick-search-box');
+  
+          if (event.target.contains(myBox) && event.target !== myBox) {
+            const overlay = document.getElementById("quick-search-overlay");
+            overlay.style.display = "none";
+            resetSearchForm();
+          }
+        }
+      </script>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="csrf-param" content="authenticity_token">
+  <meta name="csrf-token" content="hXGwB0-pU3nctyvB0UDjbo6yZPY3ErtHIrHNsFqxbp95ZT6KPWMyR6pQX_foyEzXJYVKNyAhG-s1t3Qfgu1Nng">
+      
+      <link rel="stylesheet" href="/assets/wind-4eac5c9505794fa4bcfbe24407460a48dd2a5409b0948f5aed51282d018c8e6f.css" media="all" data-turbo-track="reload">
+      <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+      <link rel="stylesheet" href="/assets/application-8c37ae3521ac4a1aff65b16708df741ae9f16a711c809b1f49721b9361eba5d0.css" data-turbo-track="reload">
+      <script type="importmap" data-turbo-track="reload">{
+    "imports": {
+      "application": "/assets/application-cd7e470282fbcff2e427d2c7a8d64ee152bc684aaad6cc77239717b9dda03a4f.js",
+      "@hotwired/turbo-rails": "/assets/turbo.min-f309baafa3ae5ad6ccee3e7362118b87678d792db8e8ab466c4fa284dd3a4700.js",
+      "@hotwired/stimulus": "https://ga.jspm.io/npm:@hotwired/stimulus@3.1.0/dist/stimulus.js",
+      "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js",
+      "stimulus-dropdown": "https://ga.jspm.io/npm:stimulus-dropdown@2.0.0/dist/stimulus-dropdown.es.js",
+      "stimulus": "https://cdn.jsdelivr.net/npm/stimulus@3.2.1/+esm",
+      "stimulus/webpack-helpers": "https://cdn.jsdelivr.net/npm/@hotwired/stimulus-webpack-helpers@1.0.1/dist/stimulus-webpack-helpers.umd.min.js",
+      "hotkeys-js": "https://ga.jspm.io/npm:hotkeys-js@3.10.0/dist/hotkeys.esm.js",
+      "stimulus-use": "https://ga.jspm.io/npm:stimulus-use@0.50.0/dist/index.js",
+      "chartkick": "/assets/chartkick-8eb76e6cbdb540d495739fce84049fd038e59e7fd55c9e08e47b0b5a74b62db4.js",
+      "Chart.bundle": "/assets/Chart.bundle-b500dae53d4829441c90fec519e8a988d5f1628b28529ee02c93fb3115ef3c34.js",
+      "controllers/application": "/assets/controllers/application-26355d5dd338e8f93da6d7368b796ae9cd42c965f49b31be388ccde7da942350.js",
+      "controllers/hovercard_controller": "/assets/controllers/hovercard_controller-2f70afcd82bb01ee288e95e3e3e55ea93e4558e57b6ac3a4810e5d82e70e47f8.js",
+      "controllers": "/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js",
+      "controllers/merge_controller": "/assets/controllers/merge_controller-a3eb828a708624e40e44565cb944275e80ad583042c87331a003ab4e5326cb61.js",
+      "controllers/submit_form_controller": "/assets/controllers/submit_form_controller-45636698c6a44947c296c79fa9bf289c4ca1955769a232bf1d8dcaa91fcbc6f2.js"
+    }
+  }</script>
+  <link rel="modulepreload" href="/assets/application-cd7e470282fbcff2e427d2c7a8d64ee152bc684aaad6cc77239717b9dda03a4f.js">
+  <link rel="modulepreload" href="/assets/turbo.min-f309baafa3ae5ad6ccee3e7362118b87678d792db8e8ab466c4fa284dd3a4700.js">
+  <link rel="modulepreload" href="/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js">
+  <script src="/assets/es-module-shims.min-d89e73202ec09dede55fb74115af9c5f9f2bb965433de1c2446e1faa6dac2470.js" async="async" data-turbo-track="reload"></script>
+  <script type="module">import "application"</script>
+      <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-163420749-1"></script>
+      <script src="/assets/analytics-bb209938f74e4fd604ed16dff52cfdcd89f1387010106b5eaa16ef53d95ef23c.js" async="async"></script>
+      <script src="/assets/menu-e3099486b161d7a1e32a248b978bd2c86189f042022e327297a61b4afdf138db.js" async="async"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.2.2/css/tom-select.bootstrap5.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.2.2/js/tom-select.complete.js"></script>
+      <link rel="icon" type="image/x-icon" href="/assets/favicon-f3786e40a143aed48c20b8a2d34ebe28b30f7d6b3b73ad55387069a3fe24b8c6.png">
+      <style>
+        /* hide scrollbar but allow scrolling */
+        #quick-search-box::-webkit-scrollbar {
+          /* width: 0px;  remove scrollbar space */
+        }
+      </style>
+      <script>
+        window.analytics = {};
+        function juneify(writeKey) {
+          window.analytics._writeKey = writeKey;
+          var script = document.createElement("script");
+          script.type = "application/javascript";
+          script.onload = function () {
+            window.analytics.page();
+            window.analytics.track(
+              'projects/index'
+            );
+          }
+          script.src = "https://unpkg.com/@june-so/analytics-next/dist/umd/standalone.js";
+          var first = document.getElementsByTagName('script')[0];
+          first.parentNode.insertBefore(script, first);
+          }
+          juneify("qadOtufyKMxrJAS0");
+      </script>
+    <meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script charset="utf-8" src="https://platform.twitter.com/js/button.856debeac157d9669cf51e73a08fbc93.js"></script></head>
+    <body class="flex flex-col h-screen w-screen justify-between">
+  
+      <div id="quick-search-overlay" class="absolute top-2/3 left-1/2 hidden">
+         <div class="relative z-10" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-gray-500 bg-opacity-25 transition-opacity"></div>
+              <div class="fixed inset-0 z-10 overflow-y-auto p-4 sm:p-6 md:p-20">
+                <div id="quick-search-box" class="mx-auto max-h-96 scroll-py-3 overflow-y-auto max-w-xl transform divide-y divide-gray-100 rounded-xl bg-white shadow-2xl ring-1 ring-black ring-opacity-5 transition-all">
+                <div class="absolute top-2.5 right-5 z-10"><button id="clsbtn" class="cursor-pointer"><img width="30" height="30" src="https://img.icons8.com/color/48/000000/esc.png"></button></div>
+                    <div class="relative">
+                  <turbo-frame id="globals_index">
+  <turbo-frame id="globals_index">
+      <svg class="pointer-events-none absolute top-3.5 left-4 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"></path>
+      </svg>
+      <div>
+          <form action="/search/search" accept-charset="UTF-8" method="get">
+              <input type="text" name="query" id="search-box" class="h-12 w-full border-0 bg-transparent pl-11 pr-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm" placeholder="Search..."> 
+  </form>    </div>    
+  
+    
+      <div class="py-14 px-6 text-center text-sm sm:px-14">
+        <p class="mt-2 text-gray-500">To view ossrank data, input a search query in the field above</p>
+      </div>
+  
+  
+  </turbo-frame>
+  <script>
+    document.getElementById('clsbtn').onclick = function() {
+      const overlay = document.getElementById("quick-search-overlay");
+      overlay.style.display = "none";   
+    };
+    window.onload = function() {
+      document.getElementById("search-box").focus();
+    }
+      
+  </script>
+  </turbo-frame>              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div>
+        <nav class="bg-white shadow-lg">
+          <div class="mx-auto px-2 sm:px-4 lg:px-8 2xl:container 2xl:mx-auto">
+            <div class="flex h-16 justify-between">
+              <div class="flex px-2 lg:px-0">
+                <div class="flex flex-shrink-0 items-center">
+                  <a href="/" class="flex items-center py-4 pr-2">
+                    <span class="font-semibold text-slate-500 text-xl">
+                      <svg style="background-size: 150px 32px" width="150" height="32" viewBox="0 0 296.96883357286436 64.80000000000001" class="css-1j8o68f"><defs id="SvgjsDefs1001"></defs><g id="SvgjsG1007" featurekey="symbolFeature-0" transform="matrix(0.7769634059593752,0,0,0.7769634059593752,-16.35709305925126,-4.894397607819375)" fill="#83b271"><g xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" font-family="Times New Roman" font-size="16" transform="scale(1 -1)"><g transform="translate(0 -96)"><g><path d="M 21.633,34.925 C 24.973,46.855 40.837,53.71 46.922,66.223 C 49.866,72.279 48.49,83.461 43.464,87.939 C 43.197,88.178 42.09,90.326 43.217,89.521 C 54.416,81.327 63.521,70.509 59.309,60.068 C 53.464,45.577 38.409,38.34 38.519,23.585 C 38.566,17.447 43.088,12.523 48.838,7.375 L 49.073,6.299 C 34.143,10.56 17.742,21.028 21.633,34.925 Z M 59.314,18.723 C 67.987,26.524 73.282,31.263 71.043,40.298 C 73.766,36.119 76.295,30.323 74.135,25.806 C 72.203,21.769 70.28,18.956 63.244,15.02 C 59.515,12.935 56.712,10.677 54.37,6.898 C 54.248,10.853 55.011,14.852 59.314,18.723 Z M 49.686,32.153 C 53.003,38.255 57.845,42.622 62.538,48.882 C 65.869,53.325 68.92,60.704 65.731,66.728 L 65.937,67.016 C 70.824,61.556 71.028,52.654 69.495,46.059 C 67.086,35.69 58.5,31.5 53.511,23.918 C 51.557,20.948 50.446,17.311 51,13.5 C 45.461,18.021 46.717,26.69 49.686,32.153 Z" stroke-linejoin="miter" stroke-linecap="round" stroke="none" stroke-width="0.75" fill="#22c55e" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775"></path></g></g></g></g><g id="SvgjsG1008" featurekey="nameLeftFeature-0" transform="matrix(2.6093556030685394,0,0,2.6093556030685394,59.34680865815253,-1.496713242401217)" fill="#111111"><path d="M7.949 20.11864 c3.7966 0 6.8983 -3.0507 6.8983 -6.9151 c0 -3.8305 -3.1017 -6.8814 -6.8983 -6.8814 c-3.8305 0 -6.9322 3.0508 -6.9322 6.8814 c0 3.8644 3.1017 6.9151 6.9322 6.9151 z M7.949 17.7798 c-2.4407 0 -4.5085 -2.1017 -4.5085 -4.5763 c0 -2.4576 2.0678 -4.5422 4.5085 -4.5422 s4.4915 2.0846 4.4915 4.5422 c0 2.4746 -2.0508 4.5763 -4.4915 4.5763 z M16.728816779661017 17.6442 l0.96576 -1.1188 c0.20339 -0.23746 0.45763 -0.23746 0.64407 -0.10186 c0.55932 0.47458 1.5593 1.3729 2.8136 1.3729 c1.2203 0 2.2712 -0.4578 2.2712 -1.5086 c0 -1.1017 -1.1356 -1.4237 -2.3051 -1.8983 c-2.4237 -1 -4.1864 -2.0339 -4.1864 -4.2373 c0 -1.7288 1.2712 -3.8136 4.339 -3.8136 c2.0847 0 3.5934 1.1866 4.0341 1.6273 c0.18644 0.18644 0.28814 0.42373 0.11864 0.62712 l-0.84746 1.1186 c-0.16966 0.22034 -0.40678 0.32203 -0.67797 0.13559 c-0.54237 -0.42373 -1.4237 -1.2034 -2.6102 -1.2034 c-1.2034 0 -1.9492 0.69492 -1.9492 1.5085 c0 0.89831 0.77966 1.339 2.0508 1.8475 c2.2203 0.93254 4.4407 1.9325 4.4407 4.3224 c0 1.9831 -1.9659 3.7964 -4.6439 3.7964 c-2.4237 0 -3.9322 -1.5422 -4.3559 -1.949 c-0.15254 -0.13559 -0.30508 -0.32203 -0.10169 -0.52542 z M27.45763033898305 17.6442 l0.96576 -1.1188 c0.20339 -0.23746 0.45763 -0.23746 0.64407 -0.10186 c0.55932 0.47458 1.5593 1.3729 2.8136 1.3729 c1.2203 0 2.2712 -0.4578 2.2712 -1.5086 c0 -1.1017 -1.1356 -1.4237 -2.3051 -1.8983 c-2.4237 -1 -4.1864 -2.0339 -4.1864 -4.2373 c0 -1.7288 1.2712 -3.8136 4.339 -3.8136 c2.0847 0 3.5934 1.1866 4.0341 1.6273 c0.18644 0.18644 0.28814 0.42373 0.11864 0.62712 l-0.84746 1.1186 c-0.16966 0.22034 -0.40678 0.32203 -0.67797 0.13559 c-0.54237 -0.42373 -1.4237 -1.2034 -2.6102 -1.2034 c-1.2034 0 -1.9492 0.69492 -1.9492 1.5085 c0 0.89831 0.77966 1.339 2.0508 1.8475 c2.2203 0.93254 4.4407 1.9325 4.4407 4.3224 c0 1.9831 -1.9659 3.7964 -4.6439 3.7964 c-2.4237 0 -3.9322 -1.5422 -4.3559 -1.949 c-0.15254 -0.13559 -0.30508 -0.32203 -0.10169 -0.52542 z"></path></g><g id="SvgjsG1009" featurekey="nameRightFeature-0" transform="matrix(2.638456947957263,0,0,2.638456947957263,161.31860801393657,-1.7707996700385564)" fill="#111111"><path d="M10.847 19.76288 c0.084746 0.13559 0.033732 0.23712 -0.11881 0.23712 l-0.88136 0 c-0.27119 0 -0.45763 -0.22017 -0.55932 -0.37271 l-3 -4.2542 l-0.050847 0 l-3.8814 0 l0 4.3898 c0 0.15254 -0.067797 0.23712 -0.23729 0.23712 l-0.88136 0 c-0.15254 0 -0.22034 -0.08458 -0.22034 -0.23712 l0 -13.102 c0 -0.15254 0.067797 -0.22034 0.22034 -0.22034 l5 0 c3.1695 0 4.6273 2.4576 4.6273 4.4746 c0 1.7288 -1.0508 3.7288 -3.2712 4.3051 z M2.3558 7.728999999999999 l0.00016552 6.3727 l3.7797 0 c2.3051 0 3.4066 -1.6102 3.4066 -3.2203 c0 -1.5932 -1.1186 -3.1524 -3.4068 -3.1524 l-3.7797 0 z M25.76291525423729 19.77983 c0.067797 0.13559 0.034229 0.22017 -0.11831 0.22017 l-1.0339 0 c-0.11864 0 -0.18644 -0.050847 -0.23729 -0.15254 l-1.1864 -2.5254 l-8.1864 0 l-1.1864 2.5254 c-0.050847 0.10169 -0.11848 0.15254 -0.22034 0.15254 l-1.0678 0 c-0.11864 0 -0.18644 -0.08458 -0.11864 -0.22017 l6.3558 -13.271 c0.067797 -0.11864 0.11864 -0.15254 0.20322 -0.15254 l0.23745 0 c0.084746 0 0.15254 0.033898 0.20339 0.15254 z M15.57641525423729 16.1019 l7.0339 0 l-3.5254 -7.4576 z M39.25427118644068 6.441000000000001 c0.11864 0 0.20356 0.067631 0.20356 0.18627 l0 13.186 c0 0.11881 -0.084746 0.18644 -0.20339 0.18644 l-0.35593 0 c-0.25441 0 -0.49169 -0.16933 -0.81373 -0.52525 l-8.9153 -10.525 l0 10.831 c0 0.13559 -0.084746 0.22017 -0.22034 0.22017 l-0.88136 0 c-0.15254 0 -0.22034 -0.08458 -0.22034 -0.22017 l0 -13.136 c0 -0.11864 0.067797 -0.20339 0.20339 -0.20339 l0.55932 0 c0.11864 0 0.20339 0.050847 0.32203 0.18644 l9.2034 10.932 l0 -10.932 c0 -0.11864 0.067797 -0.18644 0.18644 -0.18644 l0.9322 0 z M51.32181355932204 19.55932 c0.18644 0.18644 0.0673 0.44085 -0.1871 0.44085 l-0.96594 0 c-0.11864 0 -0.18644 -0.033732 -0.28814 -0.13543 l-6.8136 -6.712 l0 6.6271 c0 0.13559 -0.067797 0.22017 -0.20339 0.22017 l-0.91525 0 c-0.13559 0 -0.22017 -0.08458 -0.22017 -0.22017 l0 -12.322 c0 -0.30525 -0.033898 -0.52542 -0.067797 -0.76288 c-0.016949 -0.15254 0.033898 -0.25424 0.16949 -0.25424 l0.77966 0 c0.28814 0 0.45763 0.15254 0.45763 0.42373 l0 6 l6.1697 -6.2881 c0.084746 -0.084746 0.15254 -0.13559 0.27119 -0.13559 l1.0339 0 c0.25424 0 0.32203 0.25424 0.16966 0.4239 l-6.0678 6.1524 z"></path></g></svg>
+                    </span>
+                  </a>
+                </div>
+                <!-- Primary Navbar items -->
+                <div class="hidden lg:ml-6 lg:flex lg:space-x-5">
+                  <a href="/p" class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium border-green-500 text-gray-900">Projects</a>
+                  <a href="/c" class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 transition duration-300">Contributors</a>
+                  <a href="/cat" class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 transition duration-300">Categories</a>
+                  <a href="/com" class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 transition duration-300">Companies</a>
+                  <a href="/compare" class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 transition duration-300">Compare</a>
+                </div>
+              </div>
+              <!-- Secondary Navbar items -->
+              <div class="hidden lg:flex items-center space-x-4">
+              <button type="button" id="quick_search_button_nav" class="sm:flex items-center w-48 text-left
+                      space-x-2 px-1 sm:px-2 h-8 my-auto bg-white ring-2 ring-green-900/10 ring-green-500
+                      focus:outline-none focus:ring-2 focus:ring-green-500 shadow-sm rounded-lg text-slate-400">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden sm:block flex-none text-slate-300 dark:text-slate-400" aria-hidden="true"><path d="m19 19-3.5-3.5"></path><circle cx="11" cy="11" r="6"></circle></svg>
+                    <span class="flex-auto">search... </span><kbd class="hidden sm:block first-letter:font-sans font-semibold dark:text-slate-500"><abbr title="Command" class="no-underline text-slate-300 dark:text-slate-500">⌘</abbr>K</kbd>
+              </button>
+                  <a href="/users/sign_in" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Sign In</a>
+                  <a href="/users/sign_up" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</a>
+              </div>
+              <!-- Mobile menu button -->
+              <div class="lg:hidden flex items-center">
+                <button class="outline-none mobile-menu-button">
+                  <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- mobile menu -->
+          <div class="hidden mobile-menu 2xl:container 2xl:mx-auto">
+            <div class="lg:hidden mobile-menu ">
+            <ul class="">
+              <li class="active"><a href="/p" class="block text-sm px-2 py-4 text-white hover:text-white bg-green-500 font-semibold">Projects</a></li>
+              <li><a href="/c" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Contributors</a></li>
+              <li><a href="/cat" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Categories</a></li>
+              <li><a href="/com" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Open Core Companies</a></li>
+              <li><a href="/compare" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Compare</a></li>
+                <li><a href="/users/sign_in" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Sign In</a></li>
+                <li><a href="/users/sign_up" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Sign Up</a></li>
+            </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="py-10">
+          <div class="2xl:container 2xl:mx-auto">
+            <div class="banner-container"><div class="compare-banner bg-green-primary -mt-6">
+    <div class="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center justify-between">
+        <div class="flex w-0 flex-1 items-center">
+          <div class="text-green-primary bg-white p-2 rounded-md">
+            <!-- Heroicon name: outline/megaphone -->
+            <i class="fa-solid fa-lg fa-bullhorn"></i>
+          </div>
+          <p class="ml-3 truncate font-medium text-white">
+            <span class="md:hidden">You can now compare OSS projects!</span>
+            <span class="hidden md:inline">Big news! You can now compare OSS projects!</span>
+          </p>
+        </div>
+        <div class="order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto">
+          <a href="/compare" class="try-button flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-green-primary shadow-sm hover:bg-slate-100">Start comparing</a>
+        </div>
+        <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
+          <button type="button" class="close-button -mr-1 flex rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2">
+            <span class="sr-only">Dismiss</span>
+            <!-- Heroicon name: outline/x-mark -->
+            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div><!-- "New feature" banner gets inserted here via banner.js --></div>
+  <header>
+    <div class="mt-6 mx-auto px-4 sm:px-6 lg:px-8 md:flex md:items-center md:justify-between">
+      <div class="min-w-0 flex-1 flex-col">
+        <h1 class="text-3xl font-bold leading-tight tracking-tight text-gray-900">Projects</h1>
+        Sort By:
+        <a href="/p" class="text-green-500 hover:text-green-700">Commit Velocity</a>
+        |
+        <a href="/v" class="text-gray-500 hover:text-gray-700">Community Votes</a>
+        |
+        <a href="/fast" class="text-gray-500 hover:text-gray-700">Fast Moving</a>
+      </div>
+      <!-- 
+      <div class="flex items-center px-0 pt-4">
+        <div class="inline-flex">
+          <div class="flex md:mt-0 md:ml-4">
+            <form data-controller="submit-form" data-submit-form-target="form" data-turbo-frame="projects_index" action="/p" accept-charset="UTF-8" method="get">
+              <div class="flex flex-1 justify-center pr-2 lg:ml-6 lg:justify-end">
+                <div class="w-full max-w-lg lg:max-w-xs">
+                  <label for="search" class="sr-only">Search</label>
+                  <div class="relative">
+                    <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                      <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <input placeholder="Search" class="block w-full rounded-md border border-gray-300 bg-white py-2 pl-10 pr-3 leading-5 placeholder-gray-500 focus:border-green-500 focus:placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-green-500 sm:text-sm" data-action="input-&gt;submit-form#submit" type="text" name="query" id="query" />
+                  </div>
+                </div>
+              </div>
+  </form>        </div>
+        </div>
+        these age filter/dropdown in commented
+        <div class="inline-flex">
+          <div data-controller="dropdown" class="relative inline-block text-left">
+            <div>
+              <button data-action="dropdown#toggle click@window->dropdown#hide" type="button" class="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-100" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                  Age
+                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+            <div class="hidden transition transform origin-top-right absolute right-0 z-10 mt-2 w-56 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1"
+                data-dropdown-target="menu"
+              class="hidden transition transform origin-top-right absolute right-0"
+              data-transition-enter-from="opacity-0 scale-95"
+              data-transition-enter-to="opacity-100 scale-100"
+              data-transition-leave-from="opacity-100 scale-100"
+              data-transition-leave-to="opacity-0 scale-95"
+            >
+              <div class="py-1" role="none">
+                <a href="/" data-action="dropdown#toggle" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">All</a>
+                <a href="/p?under=30" data-action="dropdown#toggle" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Under 30 days old</a>
+                <a href="/p?under=90" data-action="dropdown#toggle" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Under 90 days old</a>
+                <a href="/p?under=365" data-action="dropdown#toggle" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Under 365 days old</a>
+                <a href="/p?under=1095" data-action="dropdown#toggle" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Under 1095 days old</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
+    </div>
+  </header>
+  <main>
+    <div class="mx-auto px-4 sm:px-6 lg:px-8">
+      <turbo-frame id="projects_index" src="https://ossrank.com/?page=3" complete="">
+        <div class="pt-[2rem] overflow-x-auto mx-0 ">
+  <div class="ring-1 ring-black ring-opacity-5 rounded-lg shadow">
+    <table class="min-w-full divide-y divide-gray-300">
+      <thead class="bg-gray-50">
+        <tr>
+            <th scope="col" class="p-2 text-left text-sm font-semibold text-gray-900 pl-6">Rank</th>
+          <th scope="col" class="p-2 text-left text-sm font-semibold text-gray-900">Project</th>
+          <th scope="col" class="p-2 text-left text-sm font-semibold text-gray-900">Open Core Companies</th>
+          <th scope="col" class="p-2 text-left text-sm font-semibold text-gray-900">Score</th>
+          <th scope="col" class="p-2 text-left text-sm font-semibold text-gray-900">Commits</th>
+          <th scope="col" class="p-2 text-left text-sm font-semibold text-gray-900">Contributors</th>
+          <th scope="col" class="p-2 text-left text-sm font-semibold text-gray-900 pr-6">Started</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200 bg-white">
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    41
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 3
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/2567-dolibarr/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/2567-dolibarr"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc2NIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--29922c678eca7fe59e094849b17ffdd33646310b/Screenshot%202023-05-08%20at%203.05.59%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/2567-dolibarr">Dolibarr</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/83-enterprise-resource-planning-erp">Enterprise Resource Planning (ERP)</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/428-customer-relationship-management-crm">Customer Relationship Management (CRM)</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    968
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 1
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              127,750
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              779
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2002
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    42
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_down whitespace-nowrap" style="margin-top: -2px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#990000"><!----> <polygon points="8.295 4.295 6 6.585 3.705 4.295 3 5 6 8 9 5"></polygon></g></svg> 2
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/964-nextcloud/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/964-nextcloud"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBckFIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9aa6c12fb7be954a24ae0e3ddc270dc8e9fac93f/Screenshot%202023-05-08%20at%202.40.45%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/964-nextcloud">Nextcloud</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/101-productivity">Productivity</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/109-file-system">File System</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/102-video-conferencing">Video Conferencing</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/309-nextcloud">Nextcloud</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/1732-elestio">Elestio</a>
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    967
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_down whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#990000"><!----> <polygon points="8.295 4.295 6 6.585 3.705 4.295 3 5 6 8 9 5"></polygon></g></svg> 1
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              171,702
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              2,382
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2008
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    43
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_down whitespace-nowrap" style="margin-top: -2px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#990000"><!----> <polygon points="8.295 4.295 6 6.585 3.705 4.295 3 5 6 8 9 5"></polygon></g></svg> 1
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/7-apache-spark/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/7-apache-spark"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0lIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--335600cf92645579d7950601b3606ddf51e41486/Screenshot%202023-05-08%20at%202.59.14%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/7-apache-spark">Apache Spark</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/12-data-processing-engine">Data Processing Engine</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/118-aws-amazon">AWS / Amazon</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/157-plural">Plural</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/170-cloudera">Cloudera</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/1331-prophecy">Prophecy</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/1858-stackable">Stackable</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/155-databricks">Databricks</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/1426-sync">Sync</a>
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    967
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_down whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#990000"><!----> <polygon points="8.295 4.295 6 6.585 3.705 4.295 3 5 6 8 9 5"></polygon></g></svg> 1
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              39,455
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              2,636
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2010
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    44
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 2
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/2769-gutenberg/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/2769-gutenberg"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdndDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d4c70f79641372bf181d304bb771a7b0d8d9007c/Screenshot%202023-03-14%20at%204.23.15%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/2769-gutenberg">Gutenberg</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/4-text-editor">Text Editor</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    967
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 3
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              28,919
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              1,172
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2016
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    45
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/109-sentry/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/109-sentry"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBQQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--64fc3be9ad11c806328e8e5163cf59b80140122a/Screenshot%202023-02-15%20at%202.59.09%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/109-sentry">Sentry</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/51-web-monitoring">Web Monitoring</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/157-plural">Plural</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/464-sentry">Sentry</a>
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    966
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              62,762
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              775
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2008
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    46
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 9
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/1267-ardupilot/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/1267-ardupilot"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7e16ebd62095c50e638e39d60f3953c523d72af8/Screenshot%202023-02-15%20at%203.21.51%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/1267-ardupilot">ArduPilot</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/292-embedded-systems">Embedded Systems</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/346-drone-uav">Drone / UAV</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    966
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 6
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              96,263
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              1,721
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2010
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    47
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_down whitespace-nowrap" style="margin-top: -2px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#990000"><!----> <polygon points="8.295 4.295 6 6.585 3.705 4.295 3 5 6 8 9 5"></polygon></g></svg> 6
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/1696-weblate/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/1696-weblate"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcmNIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cbef4d8b3bc9745e06cf945c12f76c8bcdd88023/Screenshot%202023-05-08%20at%202.49.02%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/1696-weblate">Weblate</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/88-python-library">Python Library</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/491-weblate">Weblate</a>
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    964
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_down whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#990000"><!----> <polygon points="8.295 4.295 6 6.585 3.705 4.295 3 5 6 8 9 5"></polygon></g></svg> 4
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              56,658
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              1,541
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2012
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    48
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 4
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/1151-nuclei/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/1151-nuclei"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBLdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--53fb695b5868d12c79f27953a3ea1e39510f3376/Screenshot%202023-02-15%20at%201.51.31%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/1151-nuclei">Nuclei</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/115-network-security">Network Security</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/545-project-discovery">Project Discovery</a>
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    964
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 2
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              33,613
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              859
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2020
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    49
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/300-ray/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/300-ray"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBLZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6d338ed5a7fc587e1f1783d233e4dd49a9b908c2/Screenshot%202023-02-15%20at%201.50.51%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/300-ray">Ray</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/23-distributed-processing-edge-computing">Distributed Processing &amp; Edge Computing</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/225-anyscale">Anyscale</a>
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    963
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              21,759
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              1,035
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2016
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    50
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 9
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/588-osmand/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/588-osmand"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBYUk9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--6d37a7c06702c3d575880e5860ef4dac273766af/588.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/588-osmand">OsmAnd</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/300-geospatial">Geospatial</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/217-mapping-navigation">Mapping &amp; Navigation</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/275-osmand">OsmAnd</a>
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    963
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 5
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              82,774
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              1,393
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2010
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    51
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_down whitespace-nowrap" style="margin-top: -2px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#990000"><!----> <polygon points="8.295 4.295 6 6.585 3.705 4.295 3 5 6 8 9 5"></polygon></g></svg> 1
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/1591-openwrt/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/1591-openwrt"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcFFHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--57566753abfae33e89c3a828ae9900d433ec00fe/Screenshot%202023-05-02%20at%2012.47.36%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/1591-openwrt">OpenWrt </a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/37-operating-system">Operating System</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/292-embedded-systems">Embedded Systems</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    962
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_down whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#990000"><!----> <polygon points="8.295 4.295 6 6.585 3.705 4.295 3 5 6 8 9 5"></polygon></g></svg> 1
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              75,364
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              1,668
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2004
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    52
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 8
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/302-airbyte/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/302-airbyte"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBJZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4f1016c3eff751464bbd479ac7c8015b0e70e88e/Screenshot%202023-02-15%20at%201.34.44%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/302-airbyte">Airbyte</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/15-batch-processing">Batch Processing</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/1-workflow-orchestration">Workflow Orchestration</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/157-plural">Plural</a>, <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/125-airbyte">Airbyte</a>
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    961
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 3
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              13,852
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              878
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2020
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    53
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_down whitespace-nowrap" style="margin-top: -2px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#990000"><!----> <polygon points="8.295 4.295 6 6.585 3.705 4.295 3 5 6 8 9 5"></polygon></g></svg> 5
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/733-transformers/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/733-transformers"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBMdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a277453dfd13b3a0289ecbb0f8fdc5d79e310ddc/Screenshot%202023-02-15%20at%201.57.30%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/733-transformers">Transformers</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/388-machine-learning-model">Machine Learning Model</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/753-hugging-face">Hugging Face</a>
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    961
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_down whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#990000"><!----> <polygon points="8.295 4.295 6 6.585 3.705 4.295 3 5 6 8 9 5"></polygon></g></svg> 2
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              14,834
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              2,297
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2018
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    54
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 7
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/1102-zig/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/1102-zig"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc2tIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4b841a2a62f1a52789ffc94d8f6a51902ed70a87/Screenshot%202023-05-08%20at%203.10.07%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/1102-zig">Zig</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/3-programming-language">Programming Language</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    960
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 3
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              28,018
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              927
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2015
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    55
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 19
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/449-julia/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/449-julia"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBWUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--06c8aa0a3039af295a40cce47df9939a455688bb/Screenshot%202023-02-15%20at%203.40.26%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/449-julia">Julia</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/3-programming-language">Programming Language</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/509-juliahub">JuliaHub</a>
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    959
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 7
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              61,641
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              1,727
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2009
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    56
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 6
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/1204-dart/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/1204-dart"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc1FIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2b3847a7caf31977a4b1f3ee5436c14c88860e32/Screenshot%202023-05-08%20at%203.00.18%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/1204-dart">Dart</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/3-programming-language">Programming Language</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    959
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 2
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              108,903
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              748
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2011
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    57
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 10
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/1423-oceanbase/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/1423-oceanbase"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBandIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--fe44c629b6676aa4954e3b3784177c436cb97bd6/Screenshot%202023-05-04%20at%206.27.53%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/1423-oceanbase">OceanBase</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/60-database">Database</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/764-alibaba">Alibaba</a>
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    958
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 4
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              10,473
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              404
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2021
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    58
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 7
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/2203-ivy/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/2203-ivy"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBHdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1c4666c1312e7db08a29d167efe045dc69554049/Screenshot%202023-02-15%20at%201.07.18%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/2203-ivy">Ivy</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/389-machine-learning-framework">Machine Learning Framework</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/1893-ivy">Ivy</a>
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    958
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 3
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              36,347
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              1,472
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2021
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    59
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 9
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/382-apache-arrow/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/382-apache-arrow"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBPdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e47e5f2f6e6bb2b5b46f8743a6c8e20572e1e3c7/Screenshot%202023-02-15%20at%202.58.38%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/382-apache-arrow">Apache Arrow</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/135-in-memory-processing">In-Memory Processing</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/450-voltron-data">Voltron Data </a>, <a data-turbo="false" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900" href="/com/866-dremio">Dremio</a>
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    957
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_up whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#009900"><!----> <polygon points="6 4 3 7 3.705 7.705 6 5.415 8.295 7.705 9 7"></polygon></g></svg> 3
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              20,463
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              1,362
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2014
+            </td>
+          </tr>
+          <tr>
+              <!-- rank -->
+              <td class="p-2">
+                <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    60
+                  </div>
+                  <div class="w-10 md:text-center block text-sm" style="margin-top: -2px;">
+                      <span class="change_down whitespace-nowrap" style="margin-top: -2px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#990000"><!----> <polygon points="8.295 4.295 6 6.585 3.705 4.295 3 5 6 8 9 5"></polygon></g></svg> 9
+                      </span>
+                  </div>
+                </div>
+              </td>
+            <!-- project name -->
+            <td class="w-full w-auto max-w-none p-2">
+              <div class="pr-10">
+                <span data-controller="hovercard" data-hovercard-url-value="/p/42-react-native/hovercard" data-action="mouseenter->hovercard#show mouseleave->hovercard#hide"> 
+                    <a href="/p/42-react-native"><img class="mt-2.5 mr-2 float-left h-10 w-10" src="https://ossrank.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0VIIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3b01833770d965a3fefe833e22c7f0fa1f84f463/Screenshot%202023-05-08%20at%202.58.17%20PM.png"></a>
+                  <a data-turbo="false" class="whitespace-nowrap text-2xl text-[#222222] hover:text-gray-900" href="/p/42-react-native">React Native</a>
+                </span>
+              </div>
+                <div class="pr-10">
+                  <a data-turbo="false" class="whitespace-nowrap text-base text-[#999999] hover:text-gray-900" href="/cat/31-native-app-framework">Native App Framework</a>
+                </div>
+            </td>
+            <!-- companies -->
+            <td class="p-2">
+                
+            </td>
+            <!-- score -->
+            <td class="p-2">
+              <div class="md:flex text-center grow">
+                  <div class="w-10 md:shrink-0 md:text-center">
+                    957
+                  </div>
+                  <div class="w-10 md:text-center text-sm" style="margin-top: -2px;">
+                      <span class="change_down whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16.5" height="21" viewBox="0 0 9 12"><g fill="#990000"><!----> <polygon points="8.295 4.295 6 6.585 3.705 4.295 3 5 6 8 9 5"></polygon></g></svg> 5
+                      </span>
+                  </div>
+              </div>
+            </td>
+            <!-- commits -->
+            <td class="p-2">
+              29,825
+            </td>
+            <!-- contributors -->
+            <td class="p-2">
+              3,427
+            </td>
+            <!-- first_commit_date -->
+            <td class="p-2">
+              2015
+            </td>
+          </tr>
+      </tbody>
+    </table>
+      <nav class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 px-6" aria-label="Pagination">
+        <div class="block">
+          <p class="text-sm text-gray-700">
+            Showing
+            <span class="font-medium">41</span>
+            to
+            <span class="font-medium">60</span>
+            of
+            <span class="font-medium">3793</span>
+            results
+          </p>
+        </div>
+        <div class="flex flex-1 justify-end">
+          <a class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50" href="?page=2">Previous</a>
+          <a class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50" href="?page=4">Next</a>
+        </div>
+      </nav>
+  </div>
+  </div>
+  
+  </turbo-frame>  </div>
+  </main>
+  
+  
+          </div>
+        </div>
+      </div>
+      <footer class="pt-8 pb-10 px-6 bg-slate-100 shadow-lg w-full">
+        <div class="mx-auto px-4 text-slate-500 2xl:container 2xl:mx-auto">
+          <p>
+            3.79k oss projects
+            <span class="text-slate-300">/</span>
+            <span style="white-space: nowrap;">
+              5.4k repos
+            </span>
+            <span class="text-slate-300">/</span>
+            <span style="white-space: nowrap;">
+              50.9m human commits
+            </span>
+            <span class="text-slate-300">/</span>
+            <span style="white-space: nowrap;">
+              1.24m contributors
+            </span>
+            <span class="text-slate-300">/</span>
+            <span style="white-space: nowrap;">
+              3.1k companies
+            </span>
+            <span class="text-slate-300">/</span>
+            <span style="white-space: nowrap;">
+              880 open core products
+            </span>
+          </p>
+          <p>
+            Open Source Software Rankings
+            <span class="text-slate-300">/</span>
+            <span style="white-space: nowrap;">
+              <a class="text-green-500 underline decoration-green-500/30" href="mailto:support@ossrank.com">support@ossrank.com</a>
+            </span>
+              <span class="text-slate-300">/</span>
+            <span style="white-space: nowrap;">
+               <a href="/about" class="text-green-500 underline decoration-green-500/30">About</a>
+            </span>
+             <span class="text-slate-300">/</span>
+            <span style="white-space: nowrap;">
+               <a href="/privacy" class="text-green-500 underline decoration-green-500/30">Privacy</a>
+            </span>          
+            </p><div class="mt-4">
+              <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 147px; height: 29px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.2f70fb173b9000da126c79afe2098f02.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=ossrank&amp;show_count=false&amp;show_screen_name=true&amp;size=l&amp;time=1705577351507" data-screen-name="ossrank"></iframe><script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          <p></p>
+        </div>
+      </footer>
+      <script>
+      document.getElementById('quick_search_button_nav').onclick = function() {
+          const searchInput = document.getElementById("search-box");
+          const overlay = document.getElementById("quick-search-overlay");
+          overlay.style.display = "block";
+  
+          // move this to quick search file.
+          searchInput.focus();
+          resetSearchForm();
+        };
+    </script>
+    
+  
+  
+  <iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.2f70fb173b9000da126c79afe2098f02.html?origin=https%3A%2F%2Fossrank.com" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></body></html>
